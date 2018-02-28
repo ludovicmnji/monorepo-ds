@@ -1,0 +1,37 @@
+{
+  "name": "@ludovicmnji/components",
+  "version": "1.0.0",
+  "private": true,
+  "module": "dist/index.es.js",
+  "main": "dist/index.js",
+  "scripts": {
+    "prebuild": "npm run build:clean",
+    "build": "npm run build:prod",
+    "build:clean": "rm -rf ./dist",
+    "build:prod": "BUILD=production npx rollup -c",
+    "build:dev": "BUILD=development npx rollup -c",
+    "watch": "BUILD=development npx rollup -c --watch",
+    "analyze": "npx source-map-explorer ./dist/index.es.js"
+  },
+  "peerDependencies": {
+    "react": "^16.2.x",
+    "styled-components": "^3.1.x"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0-beta.40",
+    "@babel/preset-env": "^7.0.0-beta.40",
+    "@babel/preset-react": "^7.0.0-beta.40",
+    "@babel/preset-stage-0": "^7.0.0-beta.40",
+    "babel-plugin-module-resolver": "^3.1.0",
+    "prop-types": "^15.6.1",
+    "react": "^16.2.0",
+    "rollup": "^0.56.3",
+    "rollup-plugin-babel": "4.0.0-beta.2",
+    "rollup-plugin-commonjs": "^8.3.0",
+    "rollup-plugin-node-resolve": "^3.0.3",
+    "rollup-plugin-replace": "^2.0.0",
+    "rollup-plugin-uglify": "^3.0.0",
+    "source-map-explorer": "^1.5.0",
+    "styled-components": "^3.1.6"
+  }
+}

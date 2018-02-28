@@ -1,0 +1,16 @@
+{
+  "presets": [
+    ["@babel/preset-env", { "modules": false }],
+    "@babel/preset-react",
+    "@babel/preset-stage-0"
+  ],
+  "plugins": [
+    ["babel-plugin-module-resolver", {
+      "root": ["./src"],
+      "alias": {
+        "@colors": "./src/constants/colors",
+        "@fonts": "./src/constants/fonts"
+      }
+    }]
+  ]
+}

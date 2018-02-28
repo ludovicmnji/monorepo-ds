@@ -1,0 +1,13 @@
+{
+  "name": "styled-components-issue",
+  "description": "Repository to reproduce a weird issue with styled-components",
+  "private": true,
+  "workspaces": [
+    "packages/"
+  ],
+  "author": "Ludovic Muncherji <ludovic.muncherji@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "lerna": "^2.9.0"
+  }
+}
