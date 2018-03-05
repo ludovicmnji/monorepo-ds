@@ -6,7 +6,7 @@ import replace from 'rollup-plugin-replace';
 
 import pkg from './package.json';
 
-const externals = [
+/* const externals = [
   ...Object.keys(pkg.dependencies || {}),
   ...Object.keys(pkg.peerDependencies || {}),
 ];
@@ -17,7 +17,7 @@ const makeExternalPredicate = externalsArr => {
   }
   const externalPattern = new RegExp(`^(${externalsArr.join('|')})($|/)`);
   return id => externalPattern.test(id);
-};
+}; */
 
 const isProdBuild = process.env.BUILD === 'production';
 
@@ -54,6 +54,6 @@ export default {
       sourcemap: true,
     },
   ],
-  external: makeExternalPredicate(externals),
+  external: ['styled-components', 'react'],
   plugins,
 };
