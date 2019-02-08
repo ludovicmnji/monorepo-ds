@@ -1,12 +1,12 @@
-# styled-components-issue
+# monorepo-ds
 
 ## Setup
 
-After cloning the repository and be sure to use the correct Node version (> 9.5.0), run :
+After cloning the repository and be sure to use the correct Node version (> v10), run :
 
 ```bash
 npm install
-npx lerna bootstrap
+npm run bootstrap
 ```
 
 Then, build the library with :
@@ -23,5 +23,3 @@ cd packages/website
 npm run build
 npx serve -s build
 ```
-
-You should see a big error in Chrome console.
