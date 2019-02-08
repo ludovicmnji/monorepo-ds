@@ -5,21 +5,35 @@
 After cloning the repository and be sure to use the correct Node version (> v10), run :
 
 ```bash
-npm install
-npm run bootstrap
+yarn install
+yarn bootstrap
 ```
 
 Then, build the library with :
 
 ```bash
-cd packages/components
-npm run build
+yarn build
 ```
 
-Finally, build the website with :
+or
+
+```bash
+cd packages/components
+yarn build
+
+cd packages/website
+yarn build
+```
+
+Finally, serve the website (http://localhost:5000) with :
+
+```bash
+yarn serve
+```
+
+or
 
 ```bash
 cd packages/website
-npm run build
-npx serve -s build
+yarn serve
 ```

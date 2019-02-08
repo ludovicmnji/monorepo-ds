@@ -11,6 +11,7 @@
     "bootstrap": "lerna bootstrap",
     "clean": "lerna clean",
     "start": "lerna run start",
+    "serve": "lerna run serve",
     "build": "lerna run build"
   },
   "devDependencies": {
