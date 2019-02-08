@@ -5,8 +5,8 @@
   "module": "dist/index.esm.js",
   "main": "dist/index.js",
   "scripts": {
-    "prebuild": "npm run build:clean",
-    "build": "npm run build:prod",
+    "prebuild": "yarn build:clean",
+    "build": "yarn build:prod",
     "build:clean": "rm -rf ./dist",
     "build:prod": "BUILD=production npx rollup -c",
     "build:dev": "BUILD=development npx rollup -c",

@@ -3,12 +3,12 @@
   "description": "Repository to reproduce a weird issue with styled-components",
   "private": true,
   "workspaces": [
-    "packages/"
+    "packages/*"
   ],
   "author": "Ludovic Muncherji <ludovic.muncherji@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "bootstrap": "lerna bootstrap --hoist",
+    "bootstrap": "lerna bootstrap",
     "clean": "lerna clean",
     "start": "lerna run start",
     "build": "lerna run build"
