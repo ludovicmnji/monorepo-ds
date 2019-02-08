@@ -7,7 +7,13 @@
   ],
   "author": "Ludovic Muncherji <ludovic.muncherji@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "bootstrap": "lerna bootstrap --hoist",
+    "clean": "lerna clean",
+    "start": "lerna run start",
+    "build": "lerna run build"
+  },
   "devDependencies": {
-    "lerna": "^2.9.0"
+    "lerna": "^3.0.0"
   }
 }
